@@ -7,8 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+@import GoogleMaps;
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController 
+@property (weak, nonatomic) IBOutlet GMSMapView *mapView;
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *addressLabel;
+@property (weak, nonatomic) IBOutlet UITextField *textAddress;
+
+- (IBAction)pickPlace:(UIButton *)sender;
+
 
 
 @end
